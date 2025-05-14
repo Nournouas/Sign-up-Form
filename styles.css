@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -12,4 +12,139 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.025), rgba(0, 0, 0, 0.589)),url(FrozenBG.jpeg);
+    background-size: cover;
+}
+
+main{
+    width: 70%;
+    height: 100vh;
+    background-color: rgb(247, 250, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+h1{
+    color: rgb(246, 247, 255);
+    font-family: "norsebold", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+input:invalid{
+    border: solid 2px rgba(189, 21, 21, 0.434);
+}
+
+.italic{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.form-div{
+    width: 100%;
+    padding: 50px;
+    background-color: white;
+    box-shadow: -2px 0px 15px -1px rgba(0, 0, 0, 0.041);
+}
+
+.form-title{
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-family: "norsebold", Arial, Helvetica, sans-serif;
+}
+
+.form-row{
+    display: flex;
+    gap: 10%;
+    margin-bottom: 35px;
+}
+
+.logo-container{
+    background-color: rgba(0, 0, 0, 0.584);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10vh;
+}
+
+.header-div{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.odin-logo{
+    width: 25%;
+    height: 25%;
+}
+
+.input-container{
+    width: 35%;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+input{
+    padding: 8px;
+    border: solid 1.5px rgba(24, 63, 125, 0.267);
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+input::placeholder{
+    color: rgba(18, 43, 110, 0.358);
+}
+
+label{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(9, 43, 95);
+    font-family: "norsebold", Arial, Helvetica, sans-serif;
+}
+
+input[type="submit"]{
+    background-color: rgb(16, 49, 100);
+    padding: 14px;
+    width: 35%;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.login{
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.68);
+}
+.login a{
+    color: rgba(11, 46, 121, 0.715);
+    text-decoration: none;
+}
+
+.header-div, form{
+    max-width: 1000px;
+}
+
+input:required{
+    border: solid 2px rgba(21, 57, 189, 0.434);
+}
+
+input:focus{
+    outline: none;
+    box-shadow: -2px 0px 15px -1px rgba(0, 0, 0, 0.153);
+    border: solid 3px rgb(15, 49, 171);
 }
